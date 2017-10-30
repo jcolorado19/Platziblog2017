@@ -1,0 +1,55 @@
+.portada{
+  background-color: #efefef;
+  &__form{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &--buscar{
+      margin: 15px 7px 15px 0;
+      @include border-padding(10px, 7px);
+      outline: 0;
+      font-size: 1.1em;
+      border: none;
+    }
+    &--button{
+      margin: 15px 0px 15px 0;
+      width: 17px;
+      height: 17px;
+      background-color: #333333;
+      @include border-padding(10px, 7px);
+    }
+  }
+  &__container{
+    height: 476px;
+    background-image: url("../images/portada.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__caja{
+    background-color: #efefef;
+    width: 450px;
+    opacity: .8;
+    color: $color-font;
+    @include margin-padding(0 0 30px 20px, 20px);
+    &__title{
+      text-align: left;
+    }
+    &__author{
+      font-weight: lighter;
+      margin-top: 20px;
+      border-top: 1px solid $color-font;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &--name{
+        display: flex;
+        align-items: center;
+        & img{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
